@@ -5,6 +5,8 @@ Applicazione Java Spring Boot che recupera dati meteo (attuali e degli prossimi 
 L’utente seleziona una città e visualizza le temperature massime e minime settimanali in un grafico a barre.
 
 **Tecnologie usate**
+
+
 Java 17
 
 
@@ -17,6 +19,8 @@ Docker / Docker Compose
 Open-Meteo API
 
 **Città supportate**
+
+
 Roma
 
 
