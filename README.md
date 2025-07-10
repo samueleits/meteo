@@ -11,9 +11,9 @@ L’utente seleziona una città e visualizza le temperature massime e minime set
    cd meteo
 
 
-2. **Avvia con Docker Compose**
+3. **Avvia con Docker Compose**
    docker-compose up --build
 
-3. **Apri nel browser**
+4. **Apri nel browser**
   http://localhost:8080
    
