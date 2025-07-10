@@ -6,7 +6,7 @@ L’utente seleziona una città e visualizza le temperature massime e minime set
 
 Rimbocchiamoci le maniche e buildiamo questo fantastico progetto insieme.
 
-            ![Demo GIF](img/drip-vegeta-drip.gif)
+![Demo GIF](img/drip-vegeta-drip.gif)
    
 ## ⚙️ Installazione (3 step)
 
