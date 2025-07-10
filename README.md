@@ -20,3 +20,10 @@ L’utente seleziona una città e visualizza le temperature massime e minime set
 3. **Apri nel browser**
   http://localhost:8080
 
+## Arresto (2 step)
+
+1. **Per interrompere l'app:**
+Nel terminale: Ctrl + C
+
+2. **Per rimuovere i container:**
+docker-compose down
