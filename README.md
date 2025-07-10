@@ -8,7 +8,7 @@ Rimbocchiamoci le maniche e buildiamo questo fantastico progetto insieme.
 
 ![Demo GIF](img/drip-vegeta-drip.gif)
    
-## ⚙️ Installazione (3 step)
+## Installazione (3 step)
 
 1. **Clona il progetto**
    git clone https://github.com/samueleits/meteo.git
