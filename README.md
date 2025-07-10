@@ -16,4 +16,7 @@ L’utente seleziona una città e visualizza le temperature massime e minime set
 
 4. **Apri nel browser**
   http://localhost:8080
-   
+
+
+   ![Demo GIF](img/drip-vegeta-drip.gif)
+
