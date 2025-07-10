@@ -6,49 +6,24 @@ L’utente seleziona una città e visualizza le temperature massime e minime set
 
 **Tecnologie usate**
 
-
-Java 17
-
-
-Spring Boot
-
-
-Docker / Docker Compose
-
-
-Open-Meteo API
+- Java 17
+- Spring Boot
+- HTML/CSS
+- Docker / Docker Compose
+- Open-Meteo API
 
 **Città supportate**
 
-
-Roma
-
-
-Milano
-
-
-Napoli
-
-
-Torino
-
-
-Firenze
-
-
-Venezia
-
-
-Bologna
-
-
-Genova
-
-
-Palermo
-
-
-Bari
+- Roma
+- Milano
+- Napoli
+- Torino
+- Firenze
+- Venezia
+- Bologna
+- Genova
+- Palermo
+- Bari
 
 **Rimbocchiamoci le maniche e buildiamo questo fantastico progetto insieme.**
 
