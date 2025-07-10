@@ -4,7 +4,8 @@ Applicazione Java Spring Boot che recupera dati meteo (attuali e degli prossimi 
 
 L’utente seleziona una città e visualizza le temperature massime e minime settimanali in un grafico a barre.
 
-   ![Demo GIF](img/drip-vegeta-drip.gif)
+Rimbocchiamoci le maniche e buildiamo questo fantastico progetto insieme!
+            ![Demo GIF](img/drip-vegeta-drip.gif)
    
 ## ⚙️ Installazione (3 step)
 
