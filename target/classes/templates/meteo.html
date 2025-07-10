@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Meteo per <span th:text="${cittaSelezionata}"></span></title>
+    <link rel="stylesheet" href="/css/meteo.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Meteo per <span th:text="${cittaSelezionata}"></span></h1>
+
+    <form action="/meteo" method="get">
+        <label for="citta">Seleziona un'altra città:</label>
+        <select name="citta" id="citta">
+            <option th:each="c : ${cittaDisponibili}"
+                    th:value="${c}"
+                    th:text="${c}"
+                    th:selected="${c == cittaSelezionata}">
+            </option>
+        </select>
+        <button type="submit">Mostra Meteo</button>
+    </form>
+
+    <div class="meteo-dettagli">
+        <p>Temperatura attuale: <span th:text="${temperatura}"></span> °C</p>
+        <p>Temperatura percepita: <span th:text="${percepita}"></span> °C</p>
+    </div>
+
+    ---
+
+    <h2>Previsioni Settimanali</h2>
+    <div class="chart-container">
+        <canvas id="meteoChart"></canvas>
+    </div>
+
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        // Recupera i dati dal modello di Thymeleaf
+        var dates = /*[[${dateMeteo}]]*/ [];
+        var tempMax = /*[[${tempMaxMeteo}]]*/ [];
+        var tempMin = /*[[${tempMinMeteo}]]*/ [];
+
+        // Prepara i dati per Chart.js
+        var ctx = document.getElementById('meteoChart').getContext('2d');
+        var meteoChart = new Chart(ctx, {
+            type: 'line', // Tipo di grafico a linee
+            data: {
+                labels: dates, // Le date saranno le etichette sull'asse X
+                datasets: [
+                    {
+                        label: 'Temperatura Massima (°C)',
+                        data: tempMax,
+                        borderColor: 'rgb(255, 99, 132)', // Rosso
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        tension: 0.1, // Curva la linea
+                        fill: false
+                    },
+                    {
+                        label: 'Temperatura Minima (°C)',
+                        data: tempMin,
+                        borderColor: 'rgb(54, 162, 235)', // Blu
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        tension: 0.1,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Permette di controllare le dimensioni del canvas con CSS
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        title: {
+                            display: true,
+                            text: 'Temperatura (°C)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Giorno'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Andamento Temperatura Settimanale'
+                    }
+                }
+            }
+        });
+        /]]>/
+    </script>
+</body>
+</html>

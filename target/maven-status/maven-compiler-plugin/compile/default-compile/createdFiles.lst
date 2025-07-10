@@ -1,0 +1,9 @@
+com\meteo\meteo\service\MeteoService$OpenMeteoResponseCurrent.class
+com\meteo\meteo\service\MeteoService$OpenMeteoResponseDaily.class
+com\meteo\meteo\dto\MeteoSettimanaleDto.class
+com\meteo\meteo\dto\MeteoDto.class
+com\meteo\meteo\MeteoApplication.class
+com\meteo\meteo\service\MeteoService$DailyData.class
+com\meteo\meteo\service\MeteoService.class
+com\meteo\meteo\controller\MeteoController.class
+com\meteo\meteo\service\MeteoService$CurrentWeather.class

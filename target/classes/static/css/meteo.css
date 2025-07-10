@@ -1,0 +1,64 @@
+/* meteo.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+.meteo-dettagli {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+select, button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* meteo.css */
+
+/* ... (il resto del tuo CSS esistente) ... */
+
+.chart-container {
+    position: relative;
+    /* Aumenta la larghezza e l'altezza */
+    width: 90%; /* Prova con una percentuale maggiore o un valore fisso come 900px */
+    height: 500px; /* Aumenta l'altezza fissa, o rendila proporzionale con min-height/max-height */
+    margin: 20px auto; /* Centra il contenitore */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Regola la larghezza massima per schermi più piccoli se necessario */
+@media (max-width: 768px) {
+    .chart-container {
+        width: 95%;
+        height: 350px; /* Un po' meno alto su schermi piccoli */
+    }
+}
