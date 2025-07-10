@@ -1,6 +1,6 @@
 # Meteo App
 
-Applicazione Java Spring Boot che recupera dati meteo (attuali e degli ultimi 7 giorni) per alcune città italiane tramite l'API di [open-meteo.com](https://open-meteo.com).
+Applicazione Java Spring Boot che recupera dati meteo (attuali e degli prossimi 7 giorni) per alcune città italiane tramite l'API di [open-meteo.com](https://open-meteo.com).
 
 L’utente seleziona una città e visualizza le temperature massime e minime settimanali in un grafico a barre.
 
