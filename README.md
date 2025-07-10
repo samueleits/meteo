@@ -12,7 +12,6 @@ L’utente seleziona una città e visualizza le temperature massime e minime set
 
 1. **Clona il progetto**
    git clone https://github.com/samueleits/meteo.git
-   cd meteo
 
 2. **Avvia con Docker Compose**
    docker-compose up --build
